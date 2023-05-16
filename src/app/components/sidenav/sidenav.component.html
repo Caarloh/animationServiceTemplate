@@ -1,0 +1,17 @@
+<div class="sidenav" [@sidenavAnimation]="state">
+    <div class=" menu-item"></div>
+    <div class=" menu-item"></div>
+    <div class=" menu-item"></div>
+    <div class=" footer">
+        <div class="col-6 account">
+            <button (click)="logout()">
+                <mat-icon class="icon"> logout </mat-icon>
+            </button>
+        </div>
+        <div class="col-6 account">
+            <button (click)="faceId()">
+                <mat-icon class="icon"> account </mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

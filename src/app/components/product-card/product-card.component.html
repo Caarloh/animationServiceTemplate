@@ -1,0 +1,60 @@
+<div *ngIf="onStart">
+    <div class="product-card left">
+        <div class="row main-row">
+            <div class="col-3 h100">
+                <div class="image-container">
+                    <img src="../assets/images/placeholder.jpg" class="product-image" alt="Error displaying the image">
+                </div>
+            </div>
+            <div class="col-9">
+                <div class="row title">
+                    <div class="title-container">
+                        {{data.INFO}}
+                    </div>
+                </div>
+                <div class="row elements">
+                    <div class="col-4 pdf-downloader"></div>
+                    <div class="col-8">
+                        <div class="price-container left">
+                            <div class="price-label left">
+                                <div class="price">
+                                    <div class="price-symbol">$</div>{{formatedPrice}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div *ngIf="!onStart">
+    <div class="product-card right">
+        <div class="row main-row">
+            <div class="col-9">
+                <div class="row title">
+                    <div class="title-container">
+                        {{data.INFO}}
+                    </div>
+                </div>
+                <div class="row elements">
+                    <div class="col-8">
+                        <div class="price-container right">
+                            <div class="price-label right">
+                                <div class="price">
+                                    <div class="price-symbol">$</div>{{formatedPrice}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pdf-downloader"></div>
+                </div>
+            </div>
+            <div class="col-3 h100">
+                <div class="image-container">
+                    <img src="../assets/images/placeholder.jpg" class="product-image" alt="Error displaying the image">
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

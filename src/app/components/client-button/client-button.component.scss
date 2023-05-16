@@ -1,0 +1,27 @@
+@import '../../../styles.scss';
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-button{
+    height: 2.5rem;
+    width: 50%;
+    border-radius: 3rem;
+    border-color: transparent;
+    background-image: linear-gradient(to right, $primary-green, $secondary-green);
+    background-size: 120% 100%;
+    background-position-x: 20%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "ProximaNovaLight";
+    font-size: 1.2rem;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.login-button:hover{
+    background-image: linear-gradient(to left, $primary-green, $secondary-green); /* Agrega un degradado de colores al borde inferior */
+}

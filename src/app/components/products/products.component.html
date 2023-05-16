@@ -1,0 +1,17 @@
+<div class="products">
+    <div class="title">
+        Nuestros productos
+    </div>
+    <div *ngFor="let product of products; index as i">
+        <div *ngIf="isEven(i)">
+            <products-product-card class="product-container even" 
+            [data]="product"
+            [onStart]="true"></products-product-card>
+        </div>
+        <div *ngIf="!isEven(i)">
+            <products-product-card class="product-container odd" 
+            [data]="product"
+            [onStart]="false"></products-product-card>
+        </div>
+    </div>
+</div>

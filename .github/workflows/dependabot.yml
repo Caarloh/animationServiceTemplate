@@ -1,0 +1,13 @@
+name: Dependabot
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dependabot/dependabot-core@v2.2.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          directory: "/"
+          update_schedule: "daily"

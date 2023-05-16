@@ -1,0 +1,60 @@
+@import '../../../styles.scss';
+
+.landing {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 88vh;
+    width: 100%;
+}
+
+.home-img{
+  object-fit: contain;
+  object-position: center;
+  filter: blur(1px);
+  z-index: 1;
+}
+
+.slogan{
+  position: absolute;
+  font-family: "ProximaNovaExtraBold";
+  font-size: 72px;
+  text-align: center;
+  color: white;
+  z-index: 5;
+  transform: translate(-50%, -50%); /* Centra el texto en la imagen */
+  top: 50%; /* Coloca el texto en el 50% de la altura del contenedor */
+  left: 50%; /* Coloca el texto en el 50% de la anchura del contenedor */
+  width: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    margin-top: -32px;
+}
+
+.phrase{
+  font-family: "ProximaNovaLight";
+  font-size: 24px;
+  z-index: 5;
+}
+
+.paragraph{
+  margin-bottom: -8px;
+}
+
+.green-gradient{
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text; /* para navegadores webkit */
+    color: $secondary-green;
+}
+
+.brown-gradient{
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text; /* para navegadores webkit */
+    color: $secondary-brown;
+}

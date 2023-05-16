@@ -1,0 +1,11 @@
+<div class="parent">
+    <app-home></app-home>
+</div>
+<app-session></app-session>
+<app-sidenav></app-sidenav>
+
+
+<main [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <router-outlet #outlet="outlet"></router-outlet>
+</main>
+

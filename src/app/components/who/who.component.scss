@@ -1,0 +1,30 @@
+.who {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #DEDEDE;
+    height: 88vh;
+    width: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    font-family: "ProximaNova";
+    font-size: 48px;
+    margin: 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+    background-image: linear-gradient(to right, #5ED811, #3D6B14); /* Agrega un degradado de colores al borde inferior */
+    background-size: 50% 3px; /* Define el tamaño del degradado */
+    background-position-x: 50%;
+    background-position-y: bottom; /* Define la posición del degradado */
+    background-repeat: no-repeat;
+}
+
+.phrase{
+    font-family: "ProximaNovaLight";
+    font-size: 32px;
+    max-width: 80%;
+}

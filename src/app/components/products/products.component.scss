@@ -1,0 +1,37 @@
+@import '../../../styles.scss';
+
+.products {
+    position: relative;
+    background-color: $primary-green;
+    width: 100%;
+}
+
+.title{
+    text-transform: uppercase;
+    font-family: "ProximaNova";
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 2px solid transparent;
+    background-image: linear-gradient(to right, $primary-brown, $secondary-brown); /* Agrega un degradado de colores al borde inferior */
+    background-size: 25% 3px; /* Define el tamaño del degradado */
+    background-position-x: 50%;
+    background-position-y: bottom; /* Define la posición del degradado */
+    background-repeat: no-repeat;
+}
+
+.product-container{
+    width: 100%;
+    display: flex;
+}
+
+.product-container.even{
+    justify-content: flex-start;
+}
+
+.product-container.odd{
+    justify-content: flex-end;
+}

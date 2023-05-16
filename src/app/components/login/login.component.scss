@@ -1,0 +1,102 @@
+@import '../../../styles.scss';
+
+.login-container {
+    z-index: 101;
+    position: absolute;
+    right: -55%;/* Esto hará que el cuadro esté oculto al principio */
+    top: 0;
+    width: 55%;
+    height: 100vh;
+    background-color: $primary-green;/* Coloca aquí el color de fondo que desees */
+}
+
+.side-button{
+    position: absolute;
+    top: 45%;
+    left: -2em;
+    width: 4em;
+    height: 4em;
+    border-radius: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-gray;
+}
+
+.lg-icon{
+    transform: scale(2);
+    color: $primary-green;
+    font-weight: bold;
+}
+
+
+.login {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font-family: "ProximaNovaBold";
+    color: white;
+    font-size: 2.5rem;
+    
+}
+
+.login-form {
+    background-color: #D4D4D4;
+    border-radius: 1.5em;
+    padding: 2em 3em;
+}
+
+input{
+    background-color: white !important;
+    border-radius: 0.7em;
+    border: 0;
+    font-size: 1.2rem;
+    width: 15em;
+    height: 2.5em;
+}
+
+.user{
+    margin: 1em 0;
+}
+
+.pass{
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.forgot{
+    font-family: "ProximaNova";
+    color: $primary-brown;
+    margin-bottom: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit-button{
+    background-color: $primary-brown !important;
+    border-radius: 0.5em;
+    border: 0;
+    font-size: 1.5rem;
+    width: 12em;
+    font-family: "ProximaNovaBold";
+    color: white;
+}
+
+.no-account {
+    margin-top: 1em;
+    font-family: "ProximaNova";
+    color: white;
+    font-size: 1.25rem;
+}
+
+:host ::ng-deep .custom-spinner circle{   
+    stroke: $primary-brown;
+    z-index: 202;
+}

@@ -1,0 +1,27 @@
+@import '../../../styles.scss';
+
+.button-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    font-size: 1.2rem;
+    border-bottom: 2px solid transparent;
+    background-position-x: -100%;
+}
+
+.button:hover{
+    background-image: linear-gradient(to left, $primary-green, $secondary-green); /* Agrega un degradado de colores al borde inferior */
+    background-position-x: 100%;
+    background-size: 200% 2px; /* Define el tamaño del degradado */
+    background-position-y: bottom; /* Define la posición del degradado */
+    background-repeat: no-repeat; /* Evita que se repita el degradado */
+    transition: background-position-x 0.3s ease-in-out;
+}

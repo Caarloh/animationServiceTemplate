@@ -1,0 +1,46 @@
+@import '../../../styles.scss';
+
+.parent{
+    background-color: white;
+    height: 92px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    z-index: 10;
+    width: 256px;
+    height: 128px;
+    border-radius: 256px / 128px;
+}
+
+.text{
+    font-family: "ProximaNova";
+    color: $font-black;
+    cursor: default;
+    font-size: 28px;
+}
+
+.logo{
+    color: $font-black;
+    max-width: 40%;
+    height: 60%;
+    z-index: 11;
+}
+
+.col-5{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    width: 100%;
+}

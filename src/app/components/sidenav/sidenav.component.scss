@@ -1,0 +1,37 @@
+@import '../../../styles.scss';
+
+.sidenav{
+    z-index: 103;
+    position: absolute;
+    left: -10vw;
+    top: 0;
+    width: 10vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10%;
+    background-color: $primary-green;
+
+}
+
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    grid-column: 1; /* Se ubica en la primera columna */
+    grid-row: auto; /* Se ubica en la última fila */
+    padding: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    background-color: $secondary-green;
+}
+
+.icon{
+    color: $primary-brown;
+    z-index: 109;
+}

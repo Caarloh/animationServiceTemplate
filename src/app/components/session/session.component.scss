@@ -1,0 +1,19 @@
+@import '../../../styles.scss';
+
+.dashboard{
+    z-index: 102;
+    position: absolute;
+    right: -90vw;
+    top: 0;
+    width: 90vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,9 @@
+@import '../styles.scss';
+
+.parent {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: $primary-green;
+    overflow-x: hidden;
+}

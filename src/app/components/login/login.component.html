@@ -1,0 +1,35 @@
+<div class="login-container" [@loginAnimation]="state">
+  <div class="login">
+    <div class="title">
+      INGRESA TU CUENTA
+    </div>
+    <div class="login-form">
+      <div *ngIf="isLoading">
+        <mat-spinner class="custom-spinner" mode="indeterminate"></mat-spinner>
+      </div>
+      <div *ngIf="!isLoading">
+        <div *ngIf="authError" class="error">
+          La combinación usuario y contraseña no existe
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="user">
+            <input type="email" formControlName="email" placeholder="Email">
+          </div>
+  
+          <div class="pass">
+            <input type="password" formControlName="password" placeholder="Password">
+            <span class="forgot">¿Olvidaste tu contraseña?</span>
+          </div>
+  
+          <button class="submit-button" type="submit">ENTRAR</button>
+        </form>
+      </div>
+    </div>
+    <div class="no-account">
+      Si deseas ser nuestro cliente contáctanos
+    </div>
+  </div>
+  <span class="side-button" (click)="loginHide()" *ngIf="active">
+    <mat-icon class="lg-icon">arrow_forward</mat-icon>
+  </span>
+</div>

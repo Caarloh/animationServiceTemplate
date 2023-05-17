@@ -21,20 +21,22 @@ import { AnimationService } from 'src/app/services/animation-service.service';
   ]
 })
 export class CameraComponent {
-  state = "hide"; 
+  state = "show"; 
   active = false;
   
   constructor(private readonly authService: AuthService, private animationService: AnimationService) {
-    this.animationService.stateCamera.subscribe(state => {
+    this.animationService.stateSidenav.subscribe(state => {
       this.state = state;
       this.active = (state == 'hide' ? false : true);
-      if (!this.active){ this.startCamera }
-      else { this.stream.getTracks().forEach(track => track.stop()) }
     });
    }
 
   @ViewChild('videoElement') videoElement!: ElementRef;
   stream!: MediaStream;
+
+  ngOnInit() {
+    this.startCamera();
+  }
 
   async startCamera() {
     try {
@@ -46,6 +48,6 @@ export class CameraComponent {
   }
 
   stopCamera() {
-    this.animationService.toggleCamera('hide');
+    this.stream.getTracks().forEach(track => track.stop());
   }
 }

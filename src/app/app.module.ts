@@ -24,6 +24,10 @@ import { AuthService } from './services/auth-service';
 import { SessionComponent } from './components/session/session.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { CameraComponent } from './components/camera/camera.component';
+import { AnimationService } from './services/animation-service.service';
+import { FaceApiService } from './services/face-api.service';
+import { VideoPlayerService } from './services/video-player.service';
+import { VideoPlayerComponent } from './components/video-player/video-player.component';
 
 
 @NgModule({
@@ -42,6 +46,7 @@ import { CameraComponent } from './components/camera/camera.component';
     SessionComponent,
     SidenavComponent,
     CameraComponent,
+    VideoPlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,7 @@ import { CameraComponent } from './components/camera/camera.component';
     WebcamModule,
   ],
   //Que hayan componentes en providers significa que puedes llamar funciones de ellos desde otros componentes
-  providers: [AuthService, ClientButtonComponent, SessionComponent], 
+  providers: [AuthService, AnimationService, FaceApiService, VideoPlayerService], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

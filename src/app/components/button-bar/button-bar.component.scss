@@ -18,7 +18,7 @@
 }
 
 .button:hover{
-    background-image: linear-gradient(to left, $primary-green, $secondary-green); /* Agrega un degradado de colores al borde inferior */
+    background-image: linear-gradient(to left, $primary-first, $secondary-first); /* Agrega un degradado de colores al borde inferior */
     background-position-x: 100%;
     background-size: 200% 2px; /* Define el tamaño del degradado */
     background-position-y: bottom; /* Define la posición del degradado */

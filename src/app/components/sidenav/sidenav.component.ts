@@ -47,6 +47,6 @@ export class SidenavComponent {
   }
 
   faceId(){
-    console.log("faceId");
+    this.animationService.toggleCamera('show');
   }
 }

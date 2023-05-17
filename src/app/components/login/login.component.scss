@@ -7,7 +7,7 @@
     top: 0;
     width: 55%;
     height: 100vh;
-    background-color: $primary-green;/* Coloca aquí el color de fondo que desees */
+    background-color: $primary-first;/* Coloca aquí el color de fondo que desees */
 }
 
 .side-button{
@@ -25,7 +25,7 @@
 
 .lg-icon{
     transform: scale(2);
-    color: $primary-green;
+    color: $primary-first;
     font-weight: bold;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .title{
-    font-family: "ProximaNovaBold";
+    font-family: "RobotoBold";
     color: white;
     font-size: 2.5rem;
     
@@ -72,31 +72,31 @@ input{
 }
 
 .forgot{
-    font-family: "ProximaNova";
-    color: $primary-brown;
+    font-family: "Roboto";
+    color: $primary-second;
     margin-bottom: 1.5em;
     display: flex;
     justify-content: flex-end;
 }
 
 .submit-button{
-    background-color: $primary-brown !important;
+    background-color: $primary-second !important;
     border-radius: 0.5em;
     border: 0;
     font-size: 1.5rem;
     width: 12em;
-    font-family: "ProximaNovaBold";
+    font-family: "RobotoBold";
     color: white;
 }
 
 .no-account {
     margin-top: 1em;
-    font-family: "ProximaNova";
+    font-family: "Roboto";
     color: white;
     font-size: 1.25rem;
 }
 
 :host ::ng-deep .custom-spinner circle{   
-    stroke: $primary-brown;
+    stroke: $primary-second;
     z-index: 202;
 }

@@ -19,7 +19,7 @@
 
 .slogan{
   position: absolute;
-  font-family: "ProximaNovaExtraBold";
+  font-family: "Roboto";
   font-size: 72px;
   text-align: center;
   color: white;
@@ -36,7 +36,7 @@
 }
 
 .phrase{
-  font-family: "ProximaNovaLight";
+  font-family: "Roboto";
   font-size: 24px;
   z-index: 5;
 }
@@ -49,12 +49,12 @@
     display: inline-block;
     background-clip: text;
     -webkit-background-clip: text; /* para navegadores webkit */
-    color: $secondary-green;
+    color: $secondary-first;
 }
 
 .brown-gradient{
     display: inline-block;
     background-clip: text;
     -webkit-background-clip: text; /* para navegadores webkit */
-    color: $secondary-brown;
+    color: $secondary-second;
 }

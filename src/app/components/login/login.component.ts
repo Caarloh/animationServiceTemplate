@@ -53,34 +53,43 @@ export class LoginComponent {
   }
 
   private login(user: string, pass: string) {
-    this.isLoading = true;
-    this.authService.login(user, pass).subscribe(
-      response => {
-        this.loginHide();
-        this.loginDone("loginAnimation")
-        this.animationService.loginDone$.subscribe((done) => {
-          if (done) {
-            this.animationService.toggleDashboard('show');
-            this.animationService.toggleSidenav('show');
-            console.log('La animación ha terminado.');
-          }
-        });
-        this.authError = false;
-        this.isLoading = false;
-      },
-      error => {
-        console.error('Error en la autenticación:', error);
-        this.authError = true;
-        this.isLoading = false;
+    this.loginHide();
+    this.loginDone("loginAnimation")
+    this.animationService.loginDone$.subscribe((done) => {
+      if (done) {
+        this.animationService.toggleDashboard('show');
+        this.animationService.toggleSidenav('show');
+        console.log('La animación ha terminado.');
       }
-    );
+    });
+    // this.isLoading = true;
+    // this.authService.login(user, pass).subscribe(
+    //   response => {
+    //     this.loginHide();
+    //     this.loginDone("loginAnimation")
+    //     this.animationService.loginDone$.subscribe((done) => {
+    //       if (done) {
+    //         this.animationService.toggleDashboard('show');
+    //         this.animationService.toggleSidenav('show');
+    //         console.log('La animación ha terminado.');
+    //       }
+    //     });
+    //     this.authError = false;
+    //     this.isLoading = false;
+    //   },
+    //   error => {
+    //     console.error('Error en la autenticación:', error);
+    //     this.authError = true;
+    //     this.isLoading = false;
+    //   }
+    // );
   }
 
   loginDone(animationName: string) {
     this.animationService.notifyLoginDone(animationName);
   }
 
-  loginHide(){
+  loginHide() {
     const html = document.documentElement;
     html.style.overflowY = 'auto';
     this.animationService.toggleLogin('hide');

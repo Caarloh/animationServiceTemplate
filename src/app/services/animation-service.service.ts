@@ -17,6 +17,8 @@ export class AnimationService {
   private sidenavAnimator = new BehaviorSubject<string>('hide');
   stateSidenav= this.sidenavAnimator.asObservable();
 
+  private cameraAnimator = new BehaviorSubject<string>('show');
+  stateCamera= this.cameraAnimator.asObservable();
 
   
   constructor() {}
@@ -36,5 +38,9 @@ export class AnimationService {
 
   toggleSidenav(state: string) {
     this.sidenavAnimator.next(state);
+  }
+
+  toggleCamera(state: string) {
+    this.cameraAnimator.next(state);
   }
 }

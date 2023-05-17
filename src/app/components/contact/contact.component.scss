@@ -8,12 +8,12 @@
 }
 
 .title{
-    font-family: "ProximaNova";
+    font-family: "Roboto";
     font-size: 40px;
     margin: 16px;
     padding-bottom: 8px;
     border-bottom: 2px solid transparent;
-    background-image: linear-gradient(to right, $primary-blue, $secondary-blue); /* Agrega un degradado de colores al borde inferior */
+    background-image: linear-gradient(to right, $primary-third, $primary-third); /* Agrega un degradado de colores al borde inferior */
     background-size: 30% 3px; /* Define el tamaño del degradado */
     background-position-x: 0%;
     background-position-y: bottom; /* Define la posición del degradado */
@@ -31,7 +31,7 @@
 .subtitle{
     width: 80%;
     float: right;
-    font-family: "ProximaNovaLight";
+    font-family: "Roboto";
     font-size: 32px;
 }
 

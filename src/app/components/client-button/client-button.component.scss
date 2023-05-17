@@ -11,17 +11,17 @@
     width: 50%;
     border-radius: 3rem;
     border-color: transparent;
-    background-image: linear-gradient(to right, $primary-green, $secondary-green);
+    background-image: linear-gradient(to right, $primary-first, $secondary-first);
     background-size: 120% 100%;
     background-position-x: 20%;
     text-transform: uppercase;
     text-align: center;
-    font-family: "ProximaNovaLight";
+    font-family: "Roboto";
     font-size: 1.2rem;
     color: white;
     transition: all 0.5s ease-in-out;
 }
 
 .login-button:hover{
-    background-image: linear-gradient(to left, $primary-green, $secondary-green); /* Agrega un degradado de colores al borde inferior */
+    background-image: linear-gradient(to left, $primary-first, $secondary-first); /* Agrega un degradado de colores al borde inferior */
 }

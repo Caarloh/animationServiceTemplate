@@ -46,7 +46,7 @@
 }
 
 .title-container{
-    font-family: "ProximaNovaLight";
+    font-family: "Roboto";
     font-size: 32px;
     width: 90%;
     height: 80%;
@@ -78,7 +78,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, $primary-brown, $secondary-brown);
+    background-image: linear-gradient(to right, $primary-second, $secondary-second);
 }
 
 .price-label.left{
@@ -90,7 +90,7 @@
 }
 
 .price{
-    font-family: "ProximaNova";
+    font-family: "Roboto";
     text-align: center;
     font-size: 48px;
     color: white;

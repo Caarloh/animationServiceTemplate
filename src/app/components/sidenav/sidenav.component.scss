@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10%;
-    background-color: $primary-green;
+    background-color: $primary-first;
 
 }
 
@@ -28,10 +28,10 @@
     align-items: center;
     justify-content: center;
     align-self: flex-end;
-    background-color: $secondary-green;
+    background-color: $secondary-first;
 }
 
 .icon{
-    color: $primary-brown;
+    color: $primary-second;
     z-index: 109;
 }

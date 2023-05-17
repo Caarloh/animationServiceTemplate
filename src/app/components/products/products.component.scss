@@ -2,13 +2,13 @@
 
 .products {
     position: relative;
-    background-color: $primary-green;
+    background-color: $primary-first;
     width: 100%;
 }
 
 .title{
     text-transform: uppercase;
-    font-family: "ProximaNova";
+    font-family: "Roboto";
     font-weight: bold;
     text-align: center;
     color: white;
@@ -16,7 +16,7 @@
     margin-bottom: 16px;
     padding-top: 16px;
     border-bottom: 2px solid transparent;
-    background-image: linear-gradient(to right, $primary-brown, $secondary-brown); /* Agrega un degradado de colores al borde inferior */
+    background-image: linear-gradient(to right, $primary-second, $secondary-second); /* Agrega un degradado de colores al borde inferior */
     background-size: 25% 3px; /* Define el tamaño del degradado */
     background-position-x: 50%;
     background-position-y: bottom; /* Define la posición del degradado */

@@ -9,32 +9,12 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
-@font-face {
-  font-family: 'ProximaNova'; /* Nombre que le quieras dar a la fuente */
-  src: url('./assets/fonts/ProximaNova.otf'); /* Ruta de la fuente en tu proyecto */
-}
-
-@font-face {
-  font-family: 'ProximaNovaLight'; /* Nombre que le quieras dar a la fuente */
-  src: url('./assets/fonts/ProximaNovaLight.otf'); /* Ruta de la fuente en tu proyecto */
-}
-
-@font-face {
-  font-family: 'ProximaNovaBold'; /* Nombre que le quieras dar a la fuente */
-  src: url('./assets/fonts/ProximaNovaBold.otf'); /* Ruta de la fuente en tu proyecto */
-}
-
-@font-face {
-  font-family: 'ProximaNovaExtraBold'; /* Nombre que le quieras dar a la fuente */
-  src: url('./assets/fonts/ProximaNovaExtraBold.otf'); /* Ruta de la fuente en tu proyecto */
-}
-
-$primary-green: #3E6C33;
-$secondary-green: #5EB646;
-$primary-brown: #6B2310;
-$secondary-brown: #B84126;
-$primary-blue: #282F6B;
-$secondary-blue: #15BCB2;
+$primary-first: #3E6C33;
+$secondary-first: #5EB646;
+$primary-second: #6B2310;
+$secondary-second: #B84126;
+$primary-third: #282F6B;
+$secondary-third: #15BCB2;
 
 $background-gray: #DEDEDE;
 
